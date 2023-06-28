@@ -16,7 +16,6 @@ int main(){
 
     h_enM = h*60;
     val_m = val_60m/60;
-    costo = (h_enM + m) * val_m;
 
     if (h == 0 && m > 60){
 
@@ -31,6 +30,8 @@ int main(){
     }
 
     else{
+        
+        costo = (h_enM + m) * val_m;
         cout << "EL valor a pagar es de: $ " << costo << endl;
     }
 
