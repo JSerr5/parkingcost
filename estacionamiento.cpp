@@ -24,6 +24,12 @@ int main(){
         cout << "EL valor a pagar es de: $ " << costo << endl;
     }
 
+    else if (h == 0 && m < 60){
+
+        costo = val_60m;
+        cout << "EL valor a pagar es de: $ " << costo << endl;
+    }
+
     else{
         cout << "EL valor a pagar es de: $ " << costo << endl;
     }
