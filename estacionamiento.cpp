@@ -4,28 +4,28 @@ using namespace std;
 int main(){
 
     float h, m, totalMin, costo, val_m;
-    const float val_60m = 3.5; // costo por hora
+    const float val_60m = 3.5; // cost per hour
 
-    cout << "Parquimetro" << endl;
-    cout << "El valor minimo es de $3.5" << endl;
-    cout << "Ingrese el tiempo de su estadia: " << endl;
-    cout << "Horas: ";
+    cout << "Parking Meter" << endl;
+    cout << "The minimum charge is $3.5" << endl;
+    cout << "Enter your parking time:" << endl;
+    cout << "Hours: ";
     cin >> h;
-    cout << "Minutos: ";
+    cout << "Minutes: ";
     cin >> m;
 
     totalMin = h * 60 + m;
     val_m = val_60m / 60;
 
     if (totalMin <= 0) {
-        cout << "No debe pagar" << endl;
+        cout << "No payment needed" << endl;
     }
     else {
         costo = totalMin * val_m;
         if (costo < val_60m) {
             costo = val_60m;
         }
-        cout << "El valor a pagar es de: $ " << costo << endl;
+        cout << "Total charge: $" << costo << endl;
     }
 
     return 0;
