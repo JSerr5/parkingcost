@@ -6,12 +6,12 @@ int main(){
     float h, m, h_enM, costo, val_m;
     const float val_60m = 3.5;
 
-    cout << "Parquimetro" << endl;
-    cout << "El valor minimo es de $3.5" << endl;
-    cout << "Ingrese el tiempo de su estadia: " << endl;
-    cout << "Horas: ";
+    cout << "Parking meter" << endl;
+    cout << "The minimum charge is $3.5" << endl;
+    cout << "Enter your parking time:" << endl;
+    cout << "Hours: ";
     cin >> h;
-    cout << "Minutos: ";
+    cout << "Minutes: ";
     cin >> m;
 
     h_enM = h*60;
@@ -20,21 +20,21 @@ int main(){
     if (h == 0 && m > 60){
 
         costo = (m) * val_m;
-        cout << "EL valor a pagar es de: $ " << costo << endl;
+        cout << "The amount to pay is: $" << costo << endl;
     }
 
     else if (h == 0 && m < 60){
 
         costo = val_60m;
-        cout << "EL valor a pagar es de: $ " << costo << endl;
+        cout << "The amount to pay is: $" << costo << endl;
     }
 
     else{
         
         costo = (h_enM + m) * val_m;
-        cout << "EL valor a pagar es de: $ " << costo << endl;
+        cout << "The amount to pay is: $" << costo << endl;
     }
 
-    system("pause");
+
     return 0;
 }
