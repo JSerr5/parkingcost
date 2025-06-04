@@ -1,4 +1,12 @@
 # parkingcost
-Calculate the cost of a parking
+Calculate the cost of parking. The minimum charge is $3.5.
 
-Establish the minimum at $3.5, calculating the final cost in a parking lot by taking into account how much time, in hours and minutes, the car was parked
+## Usage
+Compile the program with `g++` and run it:
+
+```bash
+g++ estacionamiento.cpp -o parkingcost
+./parkingcost
+```
+
+The program will ask for the parking duration in hours and minutes and then display the total charge.
